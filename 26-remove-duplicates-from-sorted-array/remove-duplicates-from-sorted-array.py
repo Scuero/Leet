@@ -7,4 +7,3 @@ class Solution(object):
                 nums[k]=nums[indice]
                 k += 1
         return k
-        
