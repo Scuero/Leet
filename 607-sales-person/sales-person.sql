@@ -1,0 +1,2 @@
+-- Write your PostgreSQL query statement below
+SELECT name from SalesPerson WHERE name not in (SELECT SalesPerson.name as nombre FROM SalesPerson INNER JOIN Orders ON Orders.sales_id=SalesPerson.sales_id INNER JOIN Company ON Company.com_id=Orders.com_id WHERE Company.name='RED')
